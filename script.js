@@ -91,7 +91,8 @@ removeBtn.addEventListener("click", (e) => {
 
 modalCont.addEventListener("keydown", (e) => {
     let key = e.key;
-    if (key === "Shift") {
+    console.log(key);
+    if (key === "Shift" || key == "~") {
         createTicket(modalPriorityColor, textareaCont.value);
         addFlag = false;
         setModalToDefault();
